@@ -4,7 +4,7 @@ public class Waypoints : MonoBehaviour
 {
     public static Transform[] points;
 
-    void Awake () // maakt een array van alle waypoints
+    void Waypoint () // maakt een array van alle waypoints
     {
         points = new Transform[transform.childCount]; 
         for (int i = 0; i < points.Length; i++)
