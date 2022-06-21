@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
-    public static Transform[] points;
+    public static Transform[] id;
 
     void Awake () // maakt een array van alle waypoints
     {
-        points = new Transform[transform.childCount]; 
-        for (int i = 0; i < points.Length; i++)
+        id = new Transform[transform.childCount]; 
+        for (int i = 0; i < id.Length; i++)
         {
-            points[i] = transform.GetChild(i);
+            id[i] = transform.GetChild(i);
         }  
     }
-}
+} 
